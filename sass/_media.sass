@@ -62,6 +62,26 @@
       max-width: 400px
       &:nth-child(2n)
         margin-right: 0
+  .slide
+    &__img
+      margin-bottom: 17px
+    &__title
+      font-size: 19px
+    &__subtitle
+      font-size: 13px
+  .genres
+    &-slide
+      max-width: 205px
+    &-slider
+      &__slide
+        max-width: 231px
+        margin-right: 10px
+      &__button
+        &--next
+          right: 7px
+  .work
+    &__line
+      min-width: 883px
 @media (max-width: 992px)
   .container
     max-width: 700px
@@ -87,6 +107,71 @@
   .recomend
     &__more
       width: 100%
+  .best
+    max-width: 700px
+    &__card
+      max-width: 312px
+  .slider__position
+    height: 500px
+    width: 100%
+  .genres
+    &-slider
+      max-height: 500px
+      &__wrapper
+        align-items: center
+        align-content: center
+    &-slide
+      width: 500px
+  .slide
+    &__img
+      margin-top: 15px
+  .frame
+    &-item
+      &--last
+        display: none
+  .author
+    &__title
+      font-size: 42px
+    &__text
+      margin-right: 0
+  .work
+    &__line
+      min-width: 0
+      max-width: 250px
+      flex-wrap: wrap
+      margin-right: 0
+      &--top
+        display: none
+    &__img
+      margin-bottom: 25px
+      &--netflix
+        order: -2
+      &--airbnb
+        order: 1
+      &--slack
+        order: -3
+      &--uber
+        order: 2
+      &--fitbit
+        order: -1
+      &--google
+        order: 0
+  .netflix
+    margin: 0
+  .airbnb
+    margin: 0
+  .slack
+    margin: 0
+    margin-left: -11px
+  .uber
+    margin: 0
+
+  .fibit
+    margin: 0
+
+  .google
+    margin: 0
+
 @media (max-width: 767px)
   .container
     max-width: 576px
@@ -139,13 +224,28 @@
     margin-right: 0
     &:not(:nth-child(1))
       display: none
+    &__photo
+      margin-right: 15px
   .best
     max-width: 74%
-    border-radius: 0
-
+  .frame
+    &-item
+      width: 45%
+    &--secondary
+      width: 100%
+  .author
+    &__title
+      margin-bottom: 10px
+    &__text
+      text-align: center
+    &-wrapper
+      flex-direction: column
+      align-items: center
 @media (max-width: 576px)
   .container
     width: 87%
+    &--author
+      min-width: 300px
   .header
     padding: 18px 0
   .book
@@ -183,8 +283,11 @@
       &--secondary
         margin-bottom: 11px
   .best
-    padding-top: 63px
-    max-width: 91%
+    padding: 27px 24px 26px 24px
+    max-width: 600px
+    margin-left: 0
+    margin-right: 0
+    justify-content: start
     &__book
       &-photo
         margin-right: 14px
@@ -195,7 +298,7 @@
       height: 142px
     &__card
       margin-bottom: 36px
-      margin-left: -23px
+      margin-left: -10px
   .recomend
     &__more
       font-size: 14px
@@ -206,7 +309,7 @@
       margin-left: 10px
       margin-bottom: 52px
       &--small
-        margin-bottom: 1px
+        margin-bottom: 36px
   .card
     margin-top: 20px
     position: relative
@@ -240,8 +343,9 @@
       &--small
         font-size: 15px
         line-height: 24px
-        margin-top: 3px
+        margin-top: 5px
         margin-bottom: 14px
+        width: 110px
     &__price
       margin-right: 10px
       font-size: 16px
@@ -262,3 +366,83 @@
         margin-right: 13px
   .heart
     margin-left: 10px
+  .author
+    padding-bottom: 44px
+    &-wrapper
+      margin-bottom: 35px
+    &__title
+      font-family: Roboto Condensed
+      font-style: normal
+      font-weight: bold
+      font-size: 28px
+      line-height: 36px
+      text-align: center
+      letter-spacing: 0.2px
+      margin-left: 25px
+      margin-bottom: 25px
+    &__text
+      font-size: 18px
+      line-height: 25px
+      margin-left: 26px
+  .frame
+    &-svg
+      width: 14px
+      height: 10px
+    &--main
+      height: 210px
+      margin-bottom: 18px
+    &--secondary
+      height: 138px
+      margin-bottom: 12px
+    &__title
+      text-align: center
+      font-family: Roboto
+      font-style: normal
+      font-weight: 500
+      font-size: 16px
+      line-height: 20px
+      text-align: center
+      letter-spacing: 0.2px
+      margin-left: 0
+      margin-bottom: 7px
+    &__info
+      flex-direction: column
+      align-items: center
+    &__sub
+      margin-bottom: 16px
+      font-family: Open Sans
+      font-style: normal
+      font-weight: normal
+      font-size: 12px
+      line-height: 20px
+      text-align: center
+      margin-bottom: 6px
+    &-item
+      &--first
+        margin-left: 10px
+  .work
+    padding-top: 32px
+    padding-bottom: 38px
+    &__img
+      margin-bottom: 19px
+    &__title
+      margin-top: 0
+      margin-bottom: 23px
+  .slack
+    margin-left: 10px
+    height: 30px
+  .netflix
+    height: 24px
+    margin-right: 9px
+  .google
+    height: 30px
+    margin-right: 9px
+  .fitbit
+    margin-left: 18px
+    height: 24px
+  .airbnb
+    margin-left: 17px
+    height: 28px
+  .uber
+    height: 20px
+    margin-right: 10px
