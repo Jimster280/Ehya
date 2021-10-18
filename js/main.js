@@ -28,13 +28,35 @@ $(document).ready(function () {
     var modalDialog = $(".modal__dialog");
     modalOverlay.removeClass("modal__overlay--visible");
     modalDialog.removeClass("modal__dialog--visible");
-    $("body").css("padding-right", "0");
-    $("body").css("overflow", "auto");
+    $(".body").css("padding-right", "0");
+    $(".body").css("overflow", "auto");
   }
   // обработка форм
   $(".form").each(function () {
     $(this).validate({
       errorClass: "invalid",
+      messages: {
+        name: {
+          required: "Please specify your name",
+          minlength: "Name must be not shorter then 2",
+        },
+        email: {
+          required: "We need your email address to contact you",
+          email: "Your email address must be in the format of name@domain.com",
+        },
+        phone: {
+          required: "We need ur phone number",
+          phone: "Your phone number must be in the format of +7(9**) ***-**-**",
+          minlength: "Enter full phone number",
+        },
+      },
+    });
+    AOS.init();
+  });
+
+  $(".contact__form").each(function () {
+    $(this).validate({
+      errorClass: "contact-error",
       messages: {
         name: {
           required: "Please specify your name",
@@ -63,11 +85,11 @@ $(document).ready(function () {
     direction: "horizontal",
     spaceBetween: 26,
     grid: {
-      rows: 2,
+      rows: 1,
     },
     navigation: {
-      nextEl: ".genres-swiper__button--next",
-      prevEl: ".genres-swiper__button--prev",
+      nextEl: ".genres-swiper-button-next",
+      prevEl: ".genres-swiper-button-prev",
     },
     breakpoints: {
       320: {
@@ -81,7 +103,7 @@ $(document).ready(function () {
         slidesPerView: 3,
         spaceBetween: 10,
         grid: {
-          rows: 2,
+          rows: 1,
         },
       },
       992: {
@@ -102,8 +124,8 @@ $(document).ready(function () {
     slidesPerView: 5,
     spaceBetween: 30,
     navigation: {
-      nextEl: ".uncommen-swiper__button--next",
-      prevEl: ".uncommen-swiper__button--prev",
+      nextEl: ".uncommen-swiper-button-next",
+      prevEl: ".uncommen-swiper-button-prev",
     },
     breakpoints: {
       320: {
@@ -125,21 +147,63 @@ $(document).ready(function () {
     },
   });
 
-  var menuButton = document.querySelector(".header-menu__button");
+  var menuButton = document.querySelector(".header__menu-button");
   menuButton.addEventListener("click", function () {
     document
       .querySelector(".header__item--left")
       .classList.toggle("header__item--active");
   });
 
+  var menuButton = document.querySelector(".header__menu-button");
+  menuButton.addEventListener("click", function () {
+    document.querySelector("body").classList.toggle("body--hidden");
+  });
+
   var heartButton = document.querySelector(".heart");
   heartButton.addEventListener("click", function () {
     document.querySelector(".heart").classList.toggle("heart--active");
   });
-  var heartButton = document.querySelector(".frame-svg");
-  heartButton.addEventListener("click", function () {
+  var svgButton = document.querySelector(".frame-svg");
+  svgButton.addEventListener("click", function () {
     document.querySelector(".frame-svg").classList.toggle("frame-svg--active");
   });
+
+  var likeF = document.getElementById("heart2");
+  likeF.addEventListener("click", function () {
+    document.getElementById("heart2").classList.toggle("heart--active");
+  });
+
+  var likeF = document.getElementById("heart3");
+  likeF.addEventListener("click", function () {
+    document.getElementById("heart3").classList.toggle("heart--active");
+  });
+
+  var likeF = document.getElementById("heart4");
+  likeF.addEventListener("click", function () {
+    document.getElementById("heart4").classList.toggle("heart--active");
+  });
+
+  var likeF = document.getElementById("heart5");
+  likeF.addEventListener("click", function () {
+    document.getElementById("heart5").classList.toggle("heart--active");
+  });
+
+  var likeF = document.getElementById("heart6");
+  likeF.addEventListener("click", function () {
+    document.getElementById("heart6").classList.toggle("heart--active");
+  });
+
+  var likeS = document.getElementById("frame2");
+  likeS.addEventListener("click", function () {
+    document.getElementById("frame2").classList.toggle("frame-svg--active");
+  });
+
+  var likeS = document.getElementById("frame3");
+  likeS.addEventListener("click", function () {
+    document.getElementById("frame3").classList.toggle("frame-svg--active");
+  });
+
+  // heart
   var player;
   $(".video-play").on("click", function onYouTubeIframeAPIReady() {
     player = new YT.Player("player", {

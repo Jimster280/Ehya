@@ -12,7 +12,7 @@
     &:hover
       color: $primary
   .card
-    &__button
+    &-button
       &:hover
         background-color: $primary
   .recomend
@@ -97,14 +97,14 @@
       &__slide
         max-width: 231px
         margin-right: 10px
-      &__button
-        &--next
+      &-button
+        &-next
           right: 7px
     &-swiper
       &__button
-        &--next
+        &_next
           right: -16px
-        &--prev
+        &_prev
           left: -17px
   .work
     &__line
@@ -133,7 +133,7 @@
     padding-top: 48px
     &-wrapper
       flex-direction: column
-    &__item
+    &-item
       &--top
         justify-content: center
         order: -1
@@ -174,20 +174,22 @@
     &__img
       margin-top: 15px
   .frame
+    &--secondary
+      width: 100%
     &-item
       &--last
         display: none
       &--first
         margin-right: 25px
+        width: 50%
+      &--center
+        width: 50%
+
   .author
     &__title
       font-size: 42px
     &__text
       margin-right: 0
-    &-frame
-      &__item
-        &--secondary
-          justify-content: center
   .work
     &__line
       min-width: 0
@@ -258,6 +260,7 @@
       padding-left: 4px
       padding-top: 4px
       padding-bottom: 4px
+      flex-wrap: wrap
     &__button
       width: 100%
   .footer
@@ -285,25 +288,25 @@
         text-align: center
     &-swiper
       &__wrapper
+
         max-height: 500px
   .uncommen
     &-swiper
-      &__button
-        &--prev
+      &-button
+        &-prev
           left: 76.3%
 @media (max-width: 767px)
   .container
     max-width: 576px
     width: 92%
   .header
-    &__mobile
-      &--fixed
-        background-color: #fff
-        position: fixed
-        top: 0
-        left: 0
-        right: 0
-        z-index: 99999
+    &--fixed
+      background-color: #fff
+      position: fixed
+      top: 0
+      left: 0
+      right: 0
+      z-index: 99999
     &__item
       &--left
         display: none
@@ -316,8 +319,8 @@
         top: 103px
         background-color: #fff
         flex-direction: column
-    &-menu
-      &__button
+    &__menu
+      &-button
         display: flex
         justify-content: space-between
         flex-direction: column
@@ -334,12 +337,13 @@
     padding-bottom: 21px
     &__item
       width: 100%
-      &--top
-        order: -1
-        margin-bottom: 0
       &--bottom
         margin-bottom: 30px
         margin-right: 0
+    &-item
+      &--top
+        order: -1
+        margin-bottom: 0
     &__img
       width: 100%
     &__buttons
@@ -375,7 +379,7 @@
     max-width: 74%
   .frame
     &-item
-      width: 45%
+      width: 50%
     &--secondary
       width: 100%
   .author
@@ -411,7 +415,7 @@
         text-align: center
   .more
     margin-right: 0
-  .slider__wrapper
+  .slider-wrapper
     max-width: 471px
     margin-right: auto
     margin-left: auto
@@ -455,6 +459,9 @@
       width: 90%
   .header
     padding: 18px 0
+    &__item
+      &--active
+        top: 66px
   .book
     padding-top: 99px
     padding-bottom: 36px
@@ -479,11 +486,12 @@
       margin-bottom: 32px
       margin-right: -7px
     &__item
+      &--bottom
+        margin-bottom: -2px
+    &-item
       &--top
         order: 2
         justify-content: center
-      &--bottom
-        margin-bottom: -2px
     &__button
       padding: 9px 16px
       border-radius: 10px
@@ -543,7 +551,7 @@
       margin-right: 0
       width: 81px
       height: 139px
-    &__title
+    &-title
       font-size: 20px
       line-height: 24px
       margin-bottom: 12px
@@ -554,7 +562,7 @@
         margin-top: 5px
         margin-bottom: 14px
         width: 110px
-    &__price
+    &-price
       margin-right: 10px
       font-size: 16px
       line-height: 20px
@@ -562,7 +570,7 @@
       &--small
         font-size: 20px
         margin-bottom: 16px
-    &__button
+    &-button
       padding: 7px 27px
       margin-left: 3px
       margin-right: 10px
@@ -605,32 +613,33 @@
     &--secondary
       height: 138px
       margin-bottom: 12px
-    &__title
-      text-align: center
-      font-family: Roboto
-      font-style: normal
-      font-weight: 500
-      font-size: 16px
-      line-height: 20px
-      text-align: center
-      letter-spacing: 0.2px
-      margin-left: 0
-      margin-bottom: 7px
-    &__info
-      flex-direction: column
-      align-items: center
-    &__sub
-      margin-bottom: 16px
-      font-family: Open Sans
-      font-style: normal
-      font-weight: normal
-      font-size: 12px
-      line-height: 20px
-      text-align: center
-      margin-bottom: 6px
+
     &-item
       &--first
         margin-left: 10px
+      &__title
+        text-align: center
+        font-family: Roboto
+        font-style: normal
+        font-weight: 500
+        font-size: 16px
+        line-height: 20px
+        text-align: center
+        letter-spacing: 0.2px
+        margin-left: 0
+        margin-bottom: 7px
+      &__info
+        flex-direction: column
+        align-items: center
+      &__sub
+        margin-bottom: 16px
+        font-family: Open Sans
+        font-style: normal
+        font-weight: normal
+        font-size: 12px
+        line-height: 20px
+        text-align: center
+        margin-bottom: 6px
   .work
     padding-top: 32px
     padding-bottom: 38px
@@ -727,6 +736,8 @@
       padding-right: 7px
       padding-bottom: 7px
       padding-top: 2px
+      &_item
+        flex-wrap: wrap
     &__input
       width: 196px
       margin-left: 15px
@@ -740,6 +751,7 @@
     &__dialog
       max-width: 98%
       padding: 33px
+      max-height: 99%
   .modal
     &__info
       margin-top: 0
@@ -793,11 +805,11 @@
   .genres
     padding-bottom: 139px
     &-swiper
-      &__button
+      &-button
         top: 124%
-        &--next
+        &-next
           right: 83px
-        &--prev
+        &-prev
           left: 93px
     &-slide
       min-height: 182px
@@ -840,12 +852,12 @@
       margin-bottom: 44px
       margin-left: 11px
     &-swiper
-      &__button
+      &-button
         background-size: 48px
         top: 129%
-        &--next
+        &-next
           right: 26%
-        &--prev
+        &-prev
           left: 29.3%
           margin-top: -18px
   .author
@@ -861,6 +873,7 @@
         width: 21px
         height: 27px
         top: 39%
+
 @media (min-width: 467px) and ( max-width: 576px )
   .blog
     &-secondary

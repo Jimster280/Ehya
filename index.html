@@ -19,8 +19,8 @@
     <link rel="stylesheet" href="css/style.css" />
     <title>Ehua - BookShop</title>
   </head>
-  <body>
-    <header class="header header__mobile--fixed">
+  <body class="body">
+    <header class="header header--fixed">
       <div class="container">
         <div class="header-wrapper">
           <a href="https://up-case.ru/Ehya/" class="header__item">
@@ -47,7 +47,7 @@
             </div>
           </div>
           <!-- ./header__item -->
-          <button class="button header-menu__button">
+          <button class="button header__menu-button">
             <span class="line"></span>
             <span class="line"></span>
             <span class="line"></span>
@@ -87,7 +87,7 @@
             </div>
           </div>
           <!-- ./book-item -->
-          <div class="book-item book__item--top">
+          <div class="book-item book-item--top">
             <img src="img/book__img.jpg" alt="book image" class="book__img" />
           </div>
           <!-- ./book-item -->
@@ -108,11 +108,11 @@
                   <img src="img/book_1.png" alt="book" class="card__img" />
                 </div>
                 <div class="card__info">
-                  <h4 class="card__title">The World of Abstract Art</h4>
+                  <h4 class="card-title">The World of Abstract Art</h4>
                   <p class="card__genre">Art & Design</p>
-                  <p class="card__price">$25.00</p>
+                  <p class="card-price">$25.00</p>
                   <div class="card__button-group">
-                    <button data-toggle="modal" class="button card__button">
+                    <button data-toggle="modal" class="button card-button">
                       Купить
                     </button>
                     <svg
@@ -122,6 +122,7 @@
                       fill="none"
                       xmlns="http://www.w3.org/2000/svg"
                       class="heart"
+                      id="heart1"
                     >
                       <path
                         d="M17.2422 1.46484C15.3086 -0.1875 12.4609 0.128906 10.668 1.95703L10 2.66016L9.29688 1.95703C7.53906 0.128906 4.65625 -0.1875 2.72266 1.46484C0.507812 3.36328 0.402344 6.73828 2.37109 8.77734L9.19141 15.8086C9.61328 16.2656 10.3516 16.2656 10.7734 15.8086L17.5938 8.77734C19.5625 6.73828 19.457 3.36328 17.2422 1.46484Z"
@@ -138,11 +139,11 @@
                   <img src="img/book_2.png" alt="book" class="card__img" />
                 </div>
                 <div class="card__info">
-                  <h4 class="card__title">Educated : a&nbsp;Memoir</h4>
+                  <h4 class="card-title">Educated : a&nbsp;Memoir</h4>
                   <p class="card__genre">Education</p>
-                  <p class="card__price">$28.00</p>
+                  <p class="card-price">$28.00</p>
                   <div class="card__button-group">
-                    <button data-toggle="modal" class="button card__button">
+                    <button data-toggle="modal" class="button card-button">
                       Купить
                     </button>
                     <svg
@@ -152,6 +153,7 @@
                       fill="none"
                       xmlns="http://www.w3.org/2000/svg"
                       class="heart"
+                      id="heart2"
                     >
                       <path
                         d="M17.2422 1.46484C15.3086 -0.1875 12.4609 0.128906 10.668 1.95703L10 2.66016L9.29688 1.95703C7.53906 0.128906 4.65625 -0.1875 2.72266 1.46484C0.507812 3.36328 0.402344 6.73828 2.37109 8.77734L9.19141 15.8086C9.61328 16.2656 10.3516 16.2656 10.7734 15.8086L17.5938 8.77734C19.5625 6.73828 19.457 3.36328 17.2422 1.46484Z"
@@ -168,11 +170,11 @@
                   <img src="img/book_3.png" alt="book" class="card__img" />
                 </div>
                 <div class="card__info">
-                  <h4 class="card__title">The Blue Flowers Ray…</h4>
+                  <h4 class="card-title">The Blue Flowers Ray…</h4>
                   <p class="card__genre">Novel</p>
-                  <p class="card__price">$19.50</p>
+                  <p class="card-price">$19.50</p>
                   <div class="card__button-group">
-                    <button data-toggle="modal" class="button card__button">
+                    <button data-toggle="modal" class="button card-button">
                       Купить
                     </button>
                     <svg
@@ -182,6 +184,7 @@
                       fill="none"
                       xmlns="http://www.w3.org/2000/svg"
                       class="heart"
+                      id="heart3"
                     >
                       <path
                         d="M17.2422 1.46484C15.3086 -0.1875 12.4609 0.128906 10.668 1.95703L10 2.66016L9.29688 1.95703C7.53906 0.128906 4.65625 -0.1875 2.72266 1.46484C0.507812 3.36328 0.402344 6.73828 2.37109 8.77734L9.19141 15.8086C9.61328 16.2656 10.3516 16.2656 10.7734 15.8086L17.5938 8.77734C19.5625 6.73828 19.457 3.36328 17.2422 1.46484Z"
@@ -198,11 +201,11 @@
                   <img src="img/book_4.png" alt="book" class="card__img" />
                 </div>
                 <div class="card__info">
-                  <h4 class="card__title">There There : a&nbsp;Novel by TO</h4>
+                  <h4 class="card-title">There There : a&nbsp;Novel by TO</h4>
                   <p class="card__genre">Novel</p>
-                  <p class="card__price">$20.00</p>
+                  <p class="card-price">$20.00</p>
                   <div class="card__button-group">
-                    <button data-toggle="modal" class="button card__button">
+                    <button data-toggle="modal" class="button card-button">
                       Купить
                     </button>
                     <svg
@@ -212,6 +215,7 @@
                       fill="none"
                       xmlns="http://www.w3.org/2000/svg"
                       class="heart"
+                      id="heart4"
                     >
                       <path
                         d="M17.2422 1.46484C15.3086 -0.1875 12.4609 0.128906 10.668 1.95703L10 2.66016L9.29688 1.95703C7.53906 0.128906 4.65625 -0.1875 2.72266 1.46484C0.507812 3.36328 0.402344 6.73828 2.37109 8.77734L9.19141 15.8086C9.61328 16.2656 10.3516 16.2656 10.7734 15.8086L17.5938 8.77734C19.5625 6.73828 19.457 3.36328 17.2422 1.46484Z"
@@ -228,11 +232,11 @@
                   <img src="img/book_5.png" alt="book" class="card__img" />
                 </div>
                 <div class="card__info">
-                  <h4 class="card__title">WMNDFL : The&nbsp;Inspiration</h4>
+                  <h4 class="card-title">WMNDFL : The&nbsp;Inspiration</h4>
                   <p class="card__genre">Business</p>
-                  <p class="card__price">$23.00</p>
+                  <p class="card-price">$23.00</p>
                   <div class="card__button-group">
-                    <button data-toggle="modal" class="button card__button">
+                    <button data-toggle="modal" class="button card-button">
                       Купить
                     </button>
                     <svg
@@ -242,6 +246,7 @@
                       fill="none"
                       xmlns="http://www.w3.org/2000/svg"
                       class="heart"
+                      id="heart5"
                     >
                       <path
                         d="M17.2422 1.46484C15.3086 -0.1875 12.4609 0.128906 10.668 1.95703L10 2.66016L9.29688 1.95703C7.53906 0.128906 4.65625 -0.1875 2.72266 1.46484C0.507812 3.36328 0.402344 6.73828 2.37109 8.77734L9.19141 15.8086C9.61328 16.2656 10.3516 16.2656 10.7734 15.8086L17.5938 8.77734C19.5625 6.73828 19.457 3.36328 17.2422 1.46484Z"
@@ -257,11 +262,11 @@
                   <img src="img/book_6.png" alt="book" class="card__img" />
                 </div>
                 <div class="card__info">
-                  <h4 class="card__title">Making Things&nbsp;Happen</h4>
+                  <h4 class="card-title">Making Things&nbsp;Happen</h4>
                   <p class="card__genre">Motivation</p>
-                  <p class="card__price">$23.00</p>
+                  <p class="card-price">$23.00</p>
                   <div class="card__button-group">
-                    <button data-toggle="modal" class="button card__button">
+                    <button data-toggle="modal" class="button card-button">
                       Купить
                     </button>
                     <svg
@@ -271,6 +276,7 @@
                       fill="none"
                       xmlns="http://www.w3.org/2000/svg"
                       class="heart"
+                      id="heart6"
                     >
                       <path
                         d="M17.2422 1.46484C15.3086 -0.1875 12.4609 0.128906 10.668 1.95703L10 2.66016L9.29688 1.95703C7.53906 0.128906 4.65625 -0.1875 2.72266 1.46484C0.507812 3.36328 0.402344 6.73828 2.37109 8.77734L9.19141 15.8086C9.61328 16.2656 10.3516 16.2656 10.7734 15.8086L17.5938 8.77734C19.5625 6.73828 19.457 3.36328 17.2422 1.46484Z"
@@ -294,13 +300,13 @@
                   <img src="img/top_1.png" alt="top book" class="best__img" />
                 </div>
                 <div class="best__info">
-                  <h4 class="card__title card__title--small">
+                  <h4 class="card-title card-title--small">
                     Sprint : Solve, Test&nbsp;in 5 Days
                   </h4>
-                  <p class="card__price card__price--small">$23.00</p>
+                  <p class="card-price card-price--small">$23.00</p>
                   <button
                     data-toggle="modal"
-                    class="button card__button card__button--small"
+                    class="button card-button card-button--small"
                   >
                     Купить
                   </button>
@@ -313,13 +319,13 @@
                   <img src="img/top_2.png" alt="top book" class="best__img" />
                 </div>
                 <div class="best__info">
-                  <h4 class="card__title card__title--small">
+                  <h4 class="card-title card-title--small">
                     Hacking Growth Break Problem
                   </h4>
-                  <p class="card__price card__price--small">$23.00</p>
+                  <p class="card-price card-price--small">$23.00</p>
                   <button
                     data-toggle="modal"
-                    class="button card__button card__button--small"
+                    class="button card-button card-button--small"
                   >
                     Купить
                   </button>
@@ -332,13 +338,13 @@
                   <img src="img/top_3.png" alt="top book" class="best__img" />
                 </div>
                 <div class="best__info">
-                  <h4 class="card__title card__title--small">
+                  <h4 class="card-title card-title--small">
                     Very Nice a Novel&nbsp;by Mercy
                   </h4>
-                  <p class="card__price card__price--small">$23.00</p>
+                  <p class="card-price card-price--small">$23.00</p>
                   <button
                     data-toggle="modal"
-                    class="button card__button card__button--small"
+                    class="button card-button card-button--small"
                   >
                     Купить
                   </button>
@@ -351,13 +357,13 @@
                   <img src="img/top_4.png" alt="top book" class="best__img" />
                 </div>
                 <div class="best__info">
-                  <h4 class="card__title card__title--small">
+                  <h4 class="card-title card-title--small">
                     Hooked&nbsp;:&nbsp;How&nbsp;to Build Products
                   </h4>
-                  <p class="card__price card__price--small">$23.00</p>
+                  <p class="card-price card-price--small">$23.00</p>
                   <button
                     data-toggle="modal"
-                    class="button card__button card__button--small"
+                    class="button card-button card-button--small"
                   >
                     Купить
                   </button>
@@ -379,7 +385,7 @@
     <!-- /.recomed -->
     <div class="genres">
       <div class="container container--genres">
-        <div class="slider__wrapper">
+        <div class="slider-wrapper">
           <div class="swiper genres-swiper">
             <div class="swiper-wrapper genres-swiper__wrapper">
               <div class="swiper-slide swiper-slide--first">
@@ -488,13 +494,13 @@
           <div
             class="
               swiper-button-next
-              genres-swiper__button genres-swiper__button--next
+              genres-swiper-button genres-swiper-button-next
             "
           ></div>
           <div
             class="
               swiper-button-prev
-              genres-swiper__button genres-swiper__button--prev
+              genres-swiper-button genres-swiper-button-prev
             "
           ></div>
         </div>
@@ -573,13 +579,13 @@
           <div
             class="
               swiper-button-next
-              uncommen-swiper__button uncommen-swiper__button--next
+              uncommen-swiper-button uncommen-swiper-button-next
             "
           ></div>
           <div
             class="
               swiper-button-prev swiper-button-prev
-              uncommen-swiper__button uncommen-swiper__button--prev
+              uncommen-swiper-button uncommen-swiper-button-prev
             "
           ></div>
         </div>
@@ -623,12 +629,12 @@
                   class="video-play video-play--secondary"
                 />
               </div>
-              <div class="frame__info">
-                <div class="frame__description">
-                  <h4 class="frame__title">Emelda Scandroot</h4>
-                  <p class="frame__sub">Author of Books Tittle</p>
+              <div class="frame-item__info">
+                <div class="frame-item__description">
+                  <h4 class="frame-item__title">Emelda Scandroot</h4>
+                  <p class="frame-item__sub">Author of Books Tittle</p>
                 </div>
-                <div class="frame__svg">
+                <div class="frame-item__svg">
                   <svg
                     class="frame-svg"
                     viewBox="0 0 14 19"
@@ -657,14 +663,15 @@
                   class="video-play video-play--secondary"
                 />
               </div>
-              <div class="frame__info">
-                <div class="frame__description">
-                  <h4 class="frame__title">Mar Rueda</h4>
-                  <p class="frame__sub">Author of Books Tittle</p>
+              <div class="frame-item__info">
+                <div class="frame-item__description">
+                  <h4 class="frame-item__title">Mar Rueda</h4>
+                  <p class="frame-item__sub">Author of Books Tittle</p>
                 </div>
-                <div class="frame__svg">
+                <div class="frame-item__svg">
                   <svg
                     class="frame-svg"
+                    id="frame2"
                     viewBox="0 0 14 19"
                     fill="none"
                     xmlns="http://www.w3.org/2000/svg"
@@ -691,14 +698,15 @@
                   class="video-play video-play--secondary"
                 />
               </div>
-              <div class="frame__info">
-                <div class="frame__description">
-                  <h4 class="frame__title">Nembo Lukeni</h4>
-                  <p class="frame__sub">Author of Books Tittle</p>
+              <div class="frame-item__info">
+                <div class="frame-item__description">
+                  <h4 class="frame-item__title">Nembo Lukeni</h4>
+                  <p class="frame-item__sub">Author of Books Tittle</p>
                 </div>
-                <div class="frame__svg">
+                <div class="frame-item__svg">
                   <svg
                     class="frame-svg"
+                    id="frame3"
                     viewBox="0 0 14 19"
                     fill="none"
                     xmlns="http://www.w3.org/2000/svg"
@@ -1300,26 +1308,29 @@
             Будь первым, кто узнает о&nbsp;наших акциях
           </h2>
           <form action="send.php" method="POST" class="contact__form">
-            <div class="contact__icon">
-              <svg
-                width="16"
-                height="12"
-                viewBox="0 0 16 12"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M15.6875 3.96875C14.9688 4.53125 14.0625 5.21875 10.875 7.53125C10.25 8 9.09375 9.03125 8 9.03125C6.875 9.03125 5.75 8 5.09375 7.53125C1.90625 5.21875 1 4.53125 0.28125 3.96875C0.15625 3.875 0 3.96875 0 4.125V10.5C0 11.3438 0.65625 12 1.5 12H14.5C15.3125 12 16 11.3438 16 10.5V4.125C16 3.96875 15.8125 3.875 15.6875 3.96875ZM8 8C8.71875 8.03125 9.75 7.09375 10.2812 6.71875C14.4375 3.71875 14.75 3.4375 15.6875 2.6875C15.875 2.5625 16 2.34375 16 2.09375V1.5C16 0.6875 15.3125 0 14.5 0H1.5C0.65625 0 0 0.6875 0 1.5V2.09375C0 2.34375 0.09375 2.5625 0.28125 2.6875C1.21875 3.4375 1.53125 3.71875 5.6875 6.71875C6.21875 7.09375 7.25 8.03125 8 8Z"
-                  fill="#183B56"
-                />
-              </svg>
+            <div class="contact__form_item">
+              <div class="contact__icon">
+                <svg
+                  width="16"
+                  height="12"
+                  viewBox="0 0 16 12"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M15.6875 3.96875C14.9688 4.53125 14.0625 5.21875 10.875 7.53125C10.25 8 9.09375 9.03125 8 9.03125C6.875 9.03125 5.75 8 5.09375 7.53125C1.90625 5.21875 1 4.53125 0.28125 3.96875C0.15625 3.875 0 3.96875 0 4.125V10.5C0 11.3438 0.65625 12 1.5 12H14.5C15.3125 12 16 11.3438 16 10.5V4.125C16 3.96875 15.8125 3.875 15.6875 3.96875ZM8 8C8.71875 8.03125 9.75 7.09375 10.2812 6.71875C14.4375 3.71875 14.75 3.4375 15.6875 2.6875C15.875 2.5625 16 2.34375 16 2.09375V1.5C16 0.6875 15.3125 0 14.5 0H1.5C0.65625 0 0 0.6875 0 1.5V2.09375C0 2.34375 0.09375 2.5625 0.28125 2.6875C1.21875 3.4375 1.53125 3.71875 5.6875 6.71875C6.21875 7.09375 7.25 8.03125 8 8Z"
+                    fill="#183B56"
+                  />
+                </svg>
+              </div>
+              <input
+                type="email"
+                class="contact__input"
+                placeholder="Ваш Emaill"
+                name="email"
+                required
+              />
             </div>
-            <input
-              type="email"
-              class="contact__input"
-              placeholder="Ваш Emaill"
-              name="email"
-            />
             <button class="contact__button" type="submit">Регистрация</button>
           </form>
         </div>
@@ -1332,21 +1343,21 @@
       <div class="container">
         <div class="footer-wrapper">
           <div class="footer__main-item">
-            <a href="#" class="logo__link link">
+            <a href="https://up-case.ru/Ehya/" class="logo-link link">
               <img src="img/Logo.png" alt="Logo" />
             </a>
             <p class="footer__main-text">
               Создайте современный и креативный веб-сайт с crealand
             </p>
             <div class="footer-social">
-              <a href="https://www.google.com/" class="social__item">
+              <a href="https://www.google.com/" class="footer-social__item">
                 <svg
-                  class="social__svg"
+                  class="footer-social__svg"
                   viewBox="0 0 42 40"
                   xmlns="http://www.w3.org/2000/svg"
                 >
                   <rect
-                    class="social__svg"
+                    class="footer-social__svg"
                     opacity="0.1"
                     rx="20"
                     width="42"
@@ -1358,14 +1369,17 @@
                 </svg>
               </a>
               <!-- .social__item  -->
-              <a href="https://twitter.com/?lang=ru" class="social__item">
+              <a
+                href="https://twitter.com/?lang=ru"
+                class="footer-social__item"
+              >
                 <svg
-                  class="social__svg"
+                  class="footer-social__svg"
                   viewBox="0 0 42 40"
                   xmlns="http://www.w3.org/2000/svg"
                 >
                   <rect
-                    class="social__svg"
+                    class="footer-social__svg"
                     opacity="0.1"
                     rx="20"
                     width="42"
@@ -1377,14 +1391,17 @@
                 </svg>
               </a>
               <!-- /.social__item -->
-              <a href="https://www.instagram.com/?hl=ru" class="social__item">
+              <a
+                href="https://www.instagram.com/?hl=ru"
+                class="footer-social__item"
+              >
                 <svg
-                  class="social__svg"
+                  class="footer-social__svg"
                   viewBox="0 0 40 40"
                   xmlns="http://www.w3.org/2000/svg"
                 >
                   <rect
-                    class="social__svg"
+                    class="footer-social__svg"
                     opacity="0.1"
                     rx="20"
                     width="42"
@@ -1396,14 +1413,14 @@
                 </svg>
               </a>
               <!-- /.social__item -->
-              <a href="https://ru.linkedin.com/" class="social__item">
+              <a href="https://ru.linkedin.com/" class="footer-social__item">
                 <svg
-                  class="social__svg"
+                  class="footer-social__svg"
                   viewBox="0 0 40 40"
                   xmlns="http://www.w3.org/2000/svg"
                 >
                   <rect
-                    class="social__svg"
+                    class="footer-social__svg"
                     opacity="0.1"
                     rx="20"
                     width="42"
@@ -1497,7 +1514,7 @@
         </div>
         <!-- ./footer-wrapper -->
         <div class="footer-bottom">
-          <img class="heart__icon" src="img/Heart.png" alt="heart" />
+          <img class="heart-icon" src="img/Heart.png" alt="heart" />
           <p class="footer-bottom__text">
             Copyright © 2019. Crafted with love.
           </p>
