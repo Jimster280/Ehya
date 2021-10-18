@@ -140,4 +140,51 @@ $(document).ready(function () {
   heartButton.addEventListener("click", function () {
     document.querySelector(".frame-svg").classList.toggle("frame-svg--active");
   });
+  var player;
+  $(".video-play").on("click", function onYouTubeIframeAPIReady() {
+    player = new YT.Player("player", {
+      height: "100%",
+      width: "100%",
+      videoId: "5qap5aO4i9A",
+      events: {
+        onReady: videoPlay,
+      },
+    });
+  });
+  var player2;
+  $(".video-play--secondary").on("click", function onYouTubeIframeAPIReady() {
+    player2 = new YT.Player("player2", {
+      height: "100%",
+      width: "100%",
+      videoId: "5gf20QoQbWg",
+      events: {
+        onReady: videoPlay,
+      },
+    });
+  });
+  var player3;
+  $(".video-play--secondary").on("click", function onYouTubeIframeAPIReady() {
+    player3 = new YT.Player("player3", {
+      height: "100%",
+      width: "100%",
+      videoId: "5gf20QoQbWg",
+      events: {
+        onReady: videoPlay,
+      },
+    });
+  });
+  var player4;
+  $(".video-play--secondary").on("click", function onYouTubeIframeAPIReady() {
+    player4 = new YT.Player("player4", {
+      height: "100%",
+      width: "100%",
+      videoId: "5gf20QoQbWg",
+      events: {
+        onReady: videoPlay,
+      },
+    });
+  });
+  function videoPlay(event) {
+    event.target.playVideo();
+  }
 });

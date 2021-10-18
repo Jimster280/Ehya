@@ -1,6 +1,6 @@
 .author
   padding-top: 103px
-  padding-bottom: 100px
+  padding-bottom: 80px
   margin-left: -17px
   &__title
     font-family: Roboto Condensed
@@ -33,11 +33,16 @@
     flex-direction: column
     margin-right: -10px
     &__item
+      position: relative
+      margin-bottom: 25px
+      &--main
+        height: 380px
       &--secondary
         display: flex
         justify-content: space-between
 
 .frame
+  object-fit: cover
   &-svg
     width: 14px
     height: 19px
@@ -47,8 +52,8 @@
   &--main
     width: 100%
     height: 380px
-    margin-bottom: 25px
   &--secondary
+    position: relative
     width: 315px
     height: 200px
     margin-bottom: 19px
@@ -84,3 +89,17 @@
 .container
   &--author
     max-width: 994px
+.video
+  &-play
+    position: absolute
+    top: 36%
+    left: 46%
+    width: 100px
+    height: 100px
+    &--secondary
+      display: block
+      position: absolute
+      top: 43%
+      left: 46%
+      width: 30px
+      height: 35px

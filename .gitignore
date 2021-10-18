@@ -20,4 +20,4 @@
 /fuel/app/cache/*/*
 /fuel/app/config/crypt.php
 
-send.php
+/send.php

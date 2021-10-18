@@ -22,6 +22,9 @@
         color: #fff
   .heart
     cursor: pointer
+  .frame
+    &-svg
+      cursor: pointer
   .best
     &__link
       &:hover
@@ -30,6 +33,12 @@
     &__svg
       &:hover
         fill: $secondary
+  .contact
+    &__button
+      cursor: pointer
+  .video
+    &-play
+      cursor: pointer
 @media (min-width: 1201px)
   .modal
     &__dialog
@@ -91,6 +100,12 @@
       &__button
         &--next
           right: 7px
+    &-swiper
+      &__button
+        &--next
+          right: -16px
+        &--prev
+          left: -17px
   .work
     &__line
       min-width: 883px
@@ -99,7 +114,7 @@
       &__img
         width: 205px
       &__photo
-        margin-right: 20px
+        margin-right: 5px
     &-main
       &__img
         width: 478px
@@ -109,6 +124,8 @@
   .genres
     &-slide
       min-height: 280px
+      padding-right: 5px
+      padding-left: 5px
 @media (max-width: 992px)
   .container
     max-width: 700px
@@ -118,6 +135,7 @@
       flex-direction: column
     &__item
       &--top
+        justify-content: center
         order: -1
         display: flex
         width: 100%
@@ -150,6 +168,8 @@
     &-slide
       width: 500px
       min-height: 208px
+      padding-right: 0
+      padding-left: 0
   .slide
     &__img
       margin-top: 15px
@@ -157,11 +177,17 @@
     &-item
       &--last
         display: none
+      &--first
+        margin-right: 25px
   .author
     &__title
       font-size: 42px
     &__text
       margin-right: 0
+    &-frame
+      &__item
+        &--secondary
+          justify-content: center
   .work
     &__line
       min-width: 0
@@ -221,14 +247,17 @@
     &-wrapper
       padding-left: 13px
       padding-right: 13px
+      padding-bottom: 63px
     &__title
       font-size: 28px
       line-height: 36px
       letter-spacing: 0.2px
     &__form
       min-width: 266px
-      padding-right: 2px
-      padding-left: 2px
+      padding-right: 4px
+      padding-left: 4px
+      padding-top: 4px
+      padding-bottom: 4px
     &__button
       width: 100%
   .footer
@@ -237,6 +266,7 @@
     &__main
       &-item
         order: 2
+        margin-top: 30px
   .genres
     &__icon
       margin-top: 27px
@@ -260,7 +290,7 @@
     &-swiper
       &__button
         &--prev
-          left: 81.3%
+          left: 76.3%
 @media (max-width: 767px)
   .container
     max-width: 576px
@@ -376,6 +406,7 @@
         margin-left: auto
         margin-right: auto
         align-items: center
+        margin-top: 0
       &-text
         text-align: center
   .more
@@ -544,7 +575,7 @@
   .heart
     margin-left: 10px
   .author
-    padding-bottom: 44px
+    padding-bottom: 34px
     padding-top: 44px
     &-wrapper
       margin-bottom: 35px
@@ -569,6 +600,8 @@
     &--main
       height: 210px
       margin-bottom: 18px
+      width: 97%
+      margin-left: 10px
     &--secondary
       height: 138px
       margin-bottom: 12px
@@ -693,6 +726,7 @@
       padding-left: 12px
       padding-right: 7px
       padding-bottom: 7px
+      padding-top: 2px
     &__input
       width: 196px
       margin-left: 15px
@@ -795,7 +829,6 @@
         margin-top: 10px
       &--forth
         order: 0
-
   .uncommen
     padding-top: 47px
     padding-bottom: 135px
@@ -811,7 +844,37 @@
         background-size: 48px
         top: 129%
         &--next
-          right: 73px
+          right: 26%
         &--prev
           left: 29.3%
           margin-top: -18px
+  .author
+    &-frame
+      &__item
+        height: 210px
+  .video
+    &-play
+      width: 56px
+      height: 56px
+      left: 44%
+      &--secondary
+        width: 21px
+        height: 27px
+        top: 39%
+@media (min-width: 467px) and ( max-width: 576px )
+  .blog
+    &-secondary
+      align-items: flex-start
+@media (min-width: 562px) and ( max-width: 578px )
+  .best
+    &__card
+      margin-left: 0
+    &__book
+      &-photo
+        margin-right: 8px
+@media (min-width: 330px) and ( max-width: 562px )
+  .best
+    justify-content: center
+    margin-left: auto
+    margin-right: auto
+    width: 92%
