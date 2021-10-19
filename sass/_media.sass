@@ -1,22 +1,46 @@
 @media (min-width: 992px)
   .button
     &--primary
+      -moz-transition: background-color 0.2s 0.1s ease
+      -o-transition: background-color 0.2s 0.1s ease
+      -webkit-transition: background-color 0.2s 0.1s ease
+      -moz-transition: color 0.2s 0.1s ease
+      -o-transition: color 0.2s 0.1s ease
+      -webkit-transition: color 0.2s 0.1s ease
       &:hover
         background-color: $primary
         color: #fff
     &--secondary
+      -moz-transition: background-color 0.2s 0.1s ease
+      -o-transition: background-color 0.2s 0.1s ease
+      -webkit-transition: background-color 0.2s 0.1s ease
+      -moz-transition: color 0.2s 0.1s ease
+      -o-transition: color 0.2s 0.1s ease
+      -webkit-transition: color 0.2s 0.1s ease
       &:hover
         background-color: #fff
         color: $primary
   a
+    -moz-transition: background-color 0.2s 0.1s ease
+    -o-transition: background-color 0.2s 0.1s ease
+    -webkit-transition: background-color 0.2s 0.1s ease
     &:hover
       color: $primary
   .card
     &-button
+      -moz-transition: background-color 0.2s 0.1s ease
+      -o-transition: background-color 0.2s 0.1s ease
+      -webkit-transition: background-color 0.2s 0.1s ease
       &:hover
         background-color: $primary
   .recomend
     &__more
+      -moz-transition: background-color 0.2s 0.1s ease
+      -o-transition: background-color 0.2s 0.1s ease
+      -webkit-transition: background-color 0.2s 0.1s ease
+      -moz-transition: color 0.2s 0.1s ease
+      -o-transition: color 0.2s 0.1s ease
+      -webkit-transition: color 0.2s 0.1s ease
       &:hover
         background-color: $secondary
         color: #fff
@@ -27,18 +51,39 @@
       cursor: pointer
   .best
     &__link
+      -moz-transition: color 0.2s 0.1s ease
+      -o-transition: color 0.2s 0.1s ease
+      -webkit-transition: color 0.2s 0.1s ease
       &:hover
         color: $secondary
-  .social
-    &__svg
-      &:hover
-        fill: $secondary
+  .footer
+    &-social
+      &__svg
+        &:hover
+          fill: $primary
   .contact
     &__button
       cursor: pointer
+      -moz-transition: background-color 0.2s 0.1s ease
+      -o-transition: background-color 0.2s 0.1s ease
+      -webkit-transition: background-color 0.2s 0.1s ease
+      &:hover
+        background-color: #FF5733
   .video
     &-play
       cursor: pointer
+  .blog
+    &-secondary
+      &__link
+        &:hover
+          color: red
+  .modal
+    &__button
+      -moz-transition: background-color 0.2s 0.1s ease
+      -o-transition: background-color 0.2s 0.1s ease
+      -webkit-transition: background-color 0.2s 0.1s ease
+      &:hover
+        background-color: $yel
 @media (min-width: 1201px)
   .modal
     &__dialog
@@ -121,6 +166,9 @@
   .contact
     &__input
       width: 217px
+    &__form
+      &_item
+        flex-wrap: wrap
   .genres
     &-slide
       min-height: 280px
@@ -295,6 +343,10 @@
       &-button
         &-prev
           left: 76.3%
+  .erorr
+    &-lable
+      bottom: 15%
+      left: 56%
 @media (max-width: 767px)
   .container
     max-width: 576px
@@ -449,6 +501,10 @@
   .uncommen
     &-swiper
       width: 206px
+  .erorr
+    &-lable
+      bottom: 13%
+      left: 29%
 
 @media (max-width: 576px)
   .container
@@ -515,7 +571,7 @@
       margin-bottom: 36px
       margin-left: -10px
   .recomend
-    padding-bottom: 99px
+    padding-bottom: 54px
     &__more
       font-size: 14px
       margin-bottom: 54px
@@ -526,6 +582,8 @@
       margin-bottom: 52px
       &--small
         margin-bottom: 36px
+  .index
+    margin-bottom: 44px
   .card
     margin-top: 20px
     position: relative
@@ -726,8 +784,9 @@
   .contact
     &-wrapper
       padding-top: 25px
+      padding-bottom: 78px
+      align-items: start
     &__title
-      margin-left: -51px
       max-width: 211px
       margin-bottom: 17px
     &__form
@@ -873,6 +932,10 @@
         width: 21px
         height: 27px
         top: 39%
+  .erorr
+    &-lable
+      bottom: 15%
+      left: 2%
 
 @media (min-width: 467px) and ( max-width: 576px )
   .blog

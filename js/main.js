@@ -57,6 +57,7 @@ $(document).ready(function () {
   $(".contact__form").each(function () {
     $(this).validate({
       errorClass: "contact-error",
+      errorLabelContainer: "#erorr-container",
       messages: {
         name: {
           required: "Please specify your name",
@@ -204,9 +205,9 @@ $(document).ready(function () {
   });
 
   // heart
-  var player;
+  var player0;
   $(".video-play").on("click", function onYouTubeIframeAPIReady() {
-    player = new YT.Player("player", {
+    player0 = new YT.Player("player0", {
       height: "100%",
       width: "100%",
       videoId: "5qap5aO4i9A",
@@ -216,7 +217,7 @@ $(document).ready(function () {
     });
   });
   var player2;
-  $(".video-play--secondary").on("click", function onYouTubeIframeAPIReady() {
+  $(".video-button--first").on("click", function onYouTubeIframeAPIReady() {
     player2 = new YT.Player("player2", {
       height: "100%",
       width: "100%",
@@ -227,7 +228,7 @@ $(document).ready(function () {
     });
   });
   var player3;
-  $(".video-play--secondary").on("click", function onYouTubeIframeAPIReady() {
+  $(".video-button--second").on("click", function onYouTubeIframeAPIReady() {
     player3 = new YT.Player("player3", {
       height: "100%",
       width: "100%",
@@ -238,7 +239,7 @@ $(document).ready(function () {
     });
   });
   var player4;
-  $(".video-play--secondary").on("click", function onYouTubeIframeAPIReady() {
+  $(".video-button--therd").on("click", function onYouTubeIframeAPIReady() {
     player4 = new YT.Player("player4", {
       height: "100%",
       width: "100%",

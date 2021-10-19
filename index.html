@@ -29,13 +29,17 @@
           <div class="header__item header__item--left">
             <ul class="header-nav">
               <li class="header-nav__item">
-                <a href="#" class="header__link">Рекомендации</a>
+                <a href="https://up-case.ru/Ehya/" class="header__link"
+                  >Рекомендации</a
+                >
               </li>
               <li class="header-nav__item">
-                <a href="#" class="header__link">Книги</a>
+                <a href="https://up-case.ru/Ehya/" class="header__link"
+                  >Книги</a
+                >
               </li>
               <li class="header-nav__item">
-                <a href="#" class="header__link">Блог</a>
+                <a href="https://up-case.ru/Ehya/" class="header__link">Блог</a>
               </li>
             </ul>
             <!-- /.header__nav -->
@@ -383,6 +387,9 @@
       <!-- /.container -->
     </div>
     <!-- /.recomed -->
+    <div class="container">
+      <hr class="index" />
+    </div>
     <div class="genres">
       <div class="container container--genres">
         <div class="slider-wrapper">
@@ -509,6 +516,7 @@
       <!-- /.container -->
     </div>
     <!-- /.genres -->
+
     <div class="uncommen">
       <div class="container">
         <h2 class="uncommen__title">Неизданные книги</h2>
@@ -517,7 +525,7 @@
             <div class="swiper-wrapper uncommen-swiper__wrapper">
               <div class="swiper-slide swiper-slide--un">
                 <img
-                  src="img/swiperbook1.png"
+                  src="img/swiperbook1.jpg"
                   class="uncommen__book"
                   alt="book"
                 />
@@ -534,42 +542,42 @@
               </div>
               <div class="swiper-slide swiper-slide--un">
                 <img
-                  src="img/swiperbook4.png"
+                  src="img/swiperbook4.jpg"
                   class="uncommen__book"
                   alt="book"
                 />
               </div>
               <div class="swiper-slide swiper-slide--un">
                 <img
-                  src="img/swiperbook5.png"
+                  src="img/swiperbook5.jpg"
                   class="uncommen__book"
                   alt="book"
                 />
               </div>
               <div class="swiper-slide swiper-slide--un">
                 <img
-                  src="img/swiperbook1.png"
+                  src="img/swiperbook2.png"
                   class="uncommen__book"
                   alt="book"
                 />
               </div>
               <div class="swiper-slide swiper-slide--un">
                 <img
-                  src="img/swiperbook1.png"
+                  src="img/swiperbook2.png"
                   class="uncommen__book"
                   alt="book"
                 />
               </div>
               <div class="swiper-slide">
                 <img
-                  src="img/swiperbook1.png"
+                  src="img/swiperbook3.png"
                   class="uncommen__book"
                   alt="book"
                 />
               </div>
               <div class="swiper-slide">
                 <img
-                  src="img/swiperbook1.png"
+                  src="img/swiperbook3.png"
                   class="uncommen__book"
                   alt="book"
                 />
@@ -593,9 +601,7 @@
     </div>
     <!-- /.uncommen -->
     <script src="js/jquery-3.6.0.min.js"></script>
-    <div class="container">
-      <hr class="index" />
-    </div>
+
     <div class="author">
       <div class="container container--author">
         <div class="author-wrapper">
@@ -608,7 +614,7 @@
         </div>
         <!-- /.author-wrapper -->
         <div class="author-frame">
-          <div class="author-frame__item author-frame__item--main" id="player">
+          <div class="author-frame__item author-frame__item--main" id="player0">
             <img src="img/video1.jpg" alt="video" class="frame frame--main" />
             <script src="https://www.youtube.com/iframe_api"></script>
             <img src="img/video-paly.png" alt="video-play" class="video-play" />
@@ -626,7 +632,10 @@
                 <img
                   src="img/play.png"
                   alt="play"
-                  class="video-play video-play--secondary"
+                  class="
+                    video-play video-play--secondary
+                    video-button video-button--first
+                  "
                 />
               </div>
               <div class="frame-item__info">
@@ -660,7 +669,10 @@
                 <img
                   src="img/play.png"
                   alt="play"
-                  class="video-play video-play--secondary"
+                  class="
+                    video-play video-play--secondary
+                    video-button video-button--second
+                  "
                 />
               </div>
               <div class="frame-item__info">
@@ -695,7 +707,10 @@
                 <img
                   src="img/play.png"
                   alt="play"
-                  class="video-play video-play--secondary"
+                  class="
+                    video-play video-play--secondary
+                    video-button video-button--therd
+                  "
                 />
               </div>
               <div class="frame-item__info">
@@ -1333,6 +1348,7 @@
             </div>
             <button class="contact__button" type="submit">Регистрация</button>
           </form>
+          <div class="erorr-lable" id="erorr-container"></div>
         </div>
         <!-- /.contact-wrapper -->
       </div>
